@@ -13,3 +13,7 @@ Helping businesses run better by creating intelligent solutions that improve cla
 
 Vision:
 To become a trusted partner that helps organizations navigate complexity with confidence.
+
+## Team Operating Model
+
+See `TEAM.md` for the Cottonwood Harbor core team structure and responsibilities.
