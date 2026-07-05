@@ -155,20 +155,20 @@ What needs to happen next?
 
 Initial statuses:
 
-- New
+- Backlog
 - Planned
 - In Progress
-- Waiting
 - Blocked
-- Completed
-- Cancelled
+- In Review
+- Done
+- Archived
 
 Initial priority levels:
 
-- Low
-- Normal
-- High
 - Critical
+- High
+- Medium
+- Low
 
 ### Knowledge
 

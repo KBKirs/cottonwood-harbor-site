@@ -24,6 +24,10 @@ This log preserves the context behind important product, brand, and company deci
 | D-016 | Organizations are the active operating context | Makes the current business context visible and gives Dashboard, Search, Harbor AI, Work, Documents, and Reporting one clear boundary. | 2026-07-05 |
 | D-017 | Membership is separate from User | Allows one user to belong to multiple Organizations with different roles and permissions. | 2026-07-05 |
 | D-018 | Organization context scopes search, AI, dashboard, and permissions | Prevents cross-Organization data leakage and keeps AI context trustworthy. | 2026-07-05 |
+| D-019 | Work is hierarchical | Allows Harbor Vault to represent small tasks and large initiatives with one durable model. | 2026-07-05 |
+| D-020 | Work uses one consistent lifecycle | Keeps execution, reporting, dashboards, and AI guidance coherent across industries. | 2026-07-05 |
+| D-021 | Work relationships are first class | Allows users and Harbor AI to understand dependencies, blockers, duplicates, and origins. | 2026-07-05 |
+| D-022 | Work activity should be observable and reportable | Makes Work useful for Dashboard, Reporting, Notifications, and Harbor AI insights. | 2026-07-05 |
 
 ## Decision Discipline
 

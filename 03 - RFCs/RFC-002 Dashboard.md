@@ -201,20 +201,20 @@ Each row should show:
 
 Recommended status badges:
 
-- New
+- Backlog
 - Planned
 - In Progress
-- Waiting
 - Blocked
-- Completed
-- Cancelled
+- In Review
+- Done
+- Archived
 
 Recommended priority levels:
 
-- Low
-- Normal
-- High
 - Critical
+- High
+- Medium
+- Low
 
 Empty state:
 No priority Work right now. When Work becomes overdue, blocked, or due soon, it will appear here.

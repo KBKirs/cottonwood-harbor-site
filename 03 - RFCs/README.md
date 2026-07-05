@@ -64,13 +64,25 @@ Every RFC should include:
 - Future considerations
 - Acceptance criteria
 
-## Initial RFC Set
+## Active RFC Set
 
 - RFC 001 Harbor Model
 - RFC 002 Dashboard
 - RFC 003 Organizations
 - RFC 004 Work
-- RFC 005 Global Search
-- RFC 006 Harbor AI
-- RFC 007 Documents
-- RFC 008 Reporting
+
+## Planned Architecture Roadmap
+
+- RFC 005 Harbor AI
+- RFC 006 Documents and Knowledge
+- RFC 007 Reports and Insights
+- RFC 008 Roles and Permissions
+- RFC 009 Global Search
+- RFC 010 Calendar
+- RFC 011 Notifications
+- RFC 012 Database Schema v1
+- RFC 013 REST API Contract
+- RFC 014 Design System
+- RFC 015 Harbor Vault Foundation Release Specification
+
+After RFC 001 through RFC 006 are complete, create RFC 000 Architecture Index as the concise canonical map of Organizations, Members, Work, Documents, AI, Reports, Calendar, Notifications, Search, and their relationships.

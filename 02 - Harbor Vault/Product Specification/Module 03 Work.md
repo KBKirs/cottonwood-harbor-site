@@ -4,6 +4,9 @@ Phase 2A
 
 Module 3 Work
 
+Canonical build reference:
+RFC 004 Work
+
 ## Purpose
 
 Harbor Vault should use Work as the universal operating concept.
@@ -39,6 +42,18 @@ What needs to happen next?
 Work is anything that needs to be planned, tracked, completed, renewed, resolved, or followed up.
 
 Every Work item should belong to an Organization.
+
+Work is hierarchical and can represent small tasks or large initiatives using one model.
+
+Recommended hierarchy:
+
+```text
+Initiative
+  Project
+    Epic optional
+      Task
+        Subtask
+```
 
 ## Core Screens
 
@@ -92,10 +107,12 @@ Views:
 - Tomorrow
 - This Week
 
-### Waiting Work
+### Work Waiting On Others
 
 Purpose:
-Show work that cannot move because the team is waiting on someone or something.
+Show Work that cannot move because the team is waiting on someone or something.
+
+Waiting should be captured as a blocker reason, tag, or comment unless a future RFC adds a separate status.
 
 Examples:
 
@@ -117,14 +134,14 @@ Blocked work should always have:
 - Date blocked
 - Suggested next action
 
-### Completed Work
+### Done Work
 
 Purpose:
-Show recently completed work and support history.
+Show recently completed Work and support history.
 
 Should show:
 
-- Completed date
+- Done date
 - Organization
 - Owner
 - Outcome
@@ -134,8 +151,12 @@ Should show:
 
 Initial Work types:
 
-- Service Call
+- Initiative
 - Project
+- Epic
+- Task
+- Subtask
+- Service Call
 - Estimate
 - Installation
 - Inspection
@@ -149,17 +170,19 @@ Initial Work types:
 
 Initial statuses:
 
-- New
-- Active
-- Waiting
+- Backlog
+- Planned
+- In Progress
 - Blocked
-- Completed
-- Canceled
+- In Review
+- Done
+- Archived
 
 ## Work Priorities
 
 Initial priorities:
 
+- Critical
 - High
 - Medium
 - Low
@@ -179,10 +202,62 @@ Users can:
 - Attach document
 - Link Organization
 - Link People
+- Link related Work
 - Mark blocked
-- Mark waiting
+- Move to review
 - Complete Work
 - Ask Harbor AI for next steps
+
+## Work Relationships
+
+Work items can:
+
+- Depend on another Work item
+- Block another Work item
+- Relate to another Work item
+- Duplicate another Work item
+- Originate from another record
+
+## Work Views
+
+Supported views:
+
+- List
+- Board
+- Timeline
+- Calendar
+- Table
+
+Future:
+
+- Gantt
+
+## Activity
+
+Every Work item records meaningful activity:
+
+- Comments
+- Edits
+- Status changes
+- Assignments
+- AI actions
+- Attachments
+- Relationship changes
+
+Do not show low value noise.
+
+## Notifications
+
+Events that may generate notifications:
+
+- Assignment
+- Mention
+- Due soon
+- Overdue
+- Completion
+- Blocked
+- Comment
+- Review requested
 
 ## Harbor AI Behavior
 
@@ -199,7 +274,7 @@ Harbor AI should:
 Example:
 
 ```text
-This renewal is due in four days, but no owner is assigned. Assign an owner or move it to Waiting with a reason.
+This renewal is due in four days, but no owner is assigned. Assign an owner or move it to Blocked with a clear reason.
 ```
 
 ## Mobile Behavior
@@ -209,7 +284,7 @@ Mobile Work should prioritize:
 1. My Work
 2. High Priority
 3. Blocked
-4. Waiting
+4. In Review
 5. Due Today
 
 ## Open Questions
@@ -219,3 +294,4 @@ Mobile Work should prioritize:
 - Should Work have subtasks or checklist items?
 - Should Work require an Organization?
 - Should every Work item require a next action?
+- Should Epic be visible in Foundation or reserved for larger accounts?
