@@ -4,6 +4,9 @@ Phase 2A
 
 Module 4 Harbor AI
 
+Canonical build reference:
+RFC 005 Harbor AI
+
 ## Purpose
 
 Harbor AI is the intelligence layer of Harbor Vault.
@@ -14,7 +17,7 @@ It should proactively surface what matters, explain why it matters, and suggest 
 
 Harbor AI is not a chatbot.
 
-Harbor AI is a business advisor.
+Harbor AI is an Organization-aware business advisor and first-class collaborator.
 
 ## Primary Question
 
@@ -40,6 +43,84 @@ Harbor AI should:
 - Detect patterns
 - Prioritize attention
 - Translate data into plain language
+
+## Core Principles
+
+- Organization scoped context
+- Explainable actions
+- User remains in control
+- Permission aware behavior
+- Transparent provenance
+- No cross Organization context leakage
+
+## AI Context Model
+
+Harbor AI can access the following inside the active Organization, subject to user permissions:
+
+- Organization profile
+- Members
+- Teams
+- Work items
+- Documents
+- Knowledge base
+- Calendar
+- Reports
+- User role and permissions
+
+Harbor AI should treat inaccessible records as nonexistent.
+
+It should not hint that hidden records exist.
+
+## AI Memory
+
+Memory scopes:
+
+- Conversation memory
+- Organization memory
+- User preferences
+- Explicitly saved Knowledge
+- Temporary working context
+
+Temporary context should not become durable memory unless explicitly saved.
+
+## Conversation Model
+
+Harbor AI conversations should support:
+
+- Persistent conversations
+- Named chats
+- Organization linkage
+- Optional Work or Project linkage
+- Searchable history
+- Archived conversations
+
+## AI Actions
+
+AI actions are grouped by risk level.
+
+Read only actions:
+
+- Summaries
+- Answers
+- Trend explanations
+- Risk identification
+
+Suggested actions:
+
+- Recommend creating Work
+- Suggest changing priority
+- Suggest assigning an owner
+- Suggest linking related Work
+
+Executable actions:
+
+- Create Work
+- Update Work status
+- Assign an owner
+- Add a note
+- Save a summary
+
+Executable actions require confirmation where appropriate.
 
 ## Harbor AI Surfaces
 
@@ -112,6 +193,8 @@ Harbor AI should not:
 - Replace human responsibility
 - Generate noise
 - Create fake confidence
+- Use data from another Organization
+- Hide the sources behind important recommendations
 
 ## Permissions
 
@@ -122,6 +205,35 @@ If a user cannot access financial KPIs, Harbor AI cannot reveal financial conclu
 If a user cannot access restricted documents, Harbor AI cannot summarize them.
 
 If a user can only view assigned Work, Harbor AI can only answer within that scope.
+
+AI cannot read, summarize, cite, or modify anything the user cannot access directly.
+
+## Provenance
+
+Harbor AI should cite the information it used whenever practical.
+
+Source references may include:
+
+- Work items
+- Documents
+- Notes
+- Calendar events
+- Reports
+- Organization activity
+
+If an answer is based on general reasoning rather than records, Harbor AI should make that clear.
+
+## Prompt Templates
+
+Organizations can define reusable prompt templates for common workflows:
+
+- Weekly status reports
+- Executive summaries
+- Meeting agendas
+- Project kickoff plans
+- Renewal follow ups
+- Blocked Work reviews
+- Customer relationship summaries
 
 ## AI Output Standards
 
@@ -143,6 +255,9 @@ Foundation scope should include:
 - Work AI Suggested Next Steps
 - Report AI Trend Explanation
 - Global AI Search foundation
+- AI output labels
+- Basic AI action confirmation pattern
+- Basic AI audit event structure
 
 Foundation scope should not include:
 
@@ -158,3 +273,5 @@ Foundation scope should not include:
 - How often should the AI Brief refresh?
 - Should users be able to dismiss insights?
 - Should dismissed insights train future prioritization?
+- Should Organization memory be visible and editable?
+- Which AI memories can administrators manage?

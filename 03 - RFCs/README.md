@@ -70,14 +70,14 @@ Every RFC should include:
 - RFC 002 Dashboard
 - RFC 003 Organizations
 - RFC 004 Work
-
-## Planned Architecture Roadmap
-
 - RFC 005 Harbor AI
 - RFC 006 Documents and Knowledge
 - RFC 007 Reports and Insights
 - RFC 008 Roles and Permissions
 - RFC 009 Global Search
+
+## Planned Architecture Roadmap
+
 - RFC 010 Calendar
 - RFC 011 Notifications
 - RFC 012 Database Schema v1

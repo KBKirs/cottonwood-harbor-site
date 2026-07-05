@@ -28,6 +28,10 @@ This log preserves the context behind important product, brand, and company deci
 | D-020 | Work uses one consistent lifecycle | Keeps execution, reporting, dashboards, and AI guidance coherent across industries. | 2026-07-05 |
 | D-021 | Work relationships are first class | Allows users and Harbor AI to understand dependencies, blockers, duplicates, and origins. | 2026-07-05 |
 | D-022 | Work activity should be observable and reportable | Makes Work useful for Dashboard, Reporting, Notifications, and Harbor AI insights. | 2026-07-05 |
+| D-023 | Harbor AI is a first-class collaborator, not a bolted-on chatbot | Differentiates Harbor Vault from traditional project management platforms and keeps AI embedded in core workflows. | 2026-07-05 |
+| D-024 | Harbor AI must provide transparent provenance | Users need to see what information AI used so recommendations can be trusted and verified. | 2026-07-05 |
+| D-025 | Harbor AI actions are permission-aware and auditable | Protects Organization data and creates accountability for AI-generated changes. | 2026-07-05 |
+| D-026 | Users remain in control of AI-executable actions | AI can recommend and prepare actions, but meaningful changes require user confirmation. | 2026-07-05 |
 
 ## Decision Discipline
 

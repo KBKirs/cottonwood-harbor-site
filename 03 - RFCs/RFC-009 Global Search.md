@@ -1,4 +1,4 @@
-# RFC 005 Global Search
+# RFC 009 Global Search
 
 Status:
 Draft
@@ -27,9 +27,9 @@ Business information gets scattered. Harbor Vault needs one search experience th
 
 ## User Stories
 
-- As an owner, I want to search for a customer and see related work, notes, and documents.
-- As a manager, I want to search "blocked renewals" and see relevant Work.
-- As an employee, I want to find documents and customer context quickly.
+- As an owner, I want to search for a customer and see related Work, notes, and documents.
+- As a manager, I want to search blocked renewals and see relevant Work.
+- As a team member, I want to find documents and customer context quickly.
 
 ## UI Direction Or Mockup Notes
 
@@ -37,12 +37,12 @@ Global search should be available from the main app shell.
 
 Results should group by type:
 
-- Organizations
-- People
-- Work
-- Documents
-- Notes
-- Insights
+- Organizations.
+- People.
+- Work.
+- Documents.
+- Notes.
+- Insights.
 
 ## Workflow
 
@@ -58,13 +58,13 @@ Harbor AI must not summarize hidden records.
 
 Search index should eventually include:
 
-- Record type
-- Record id
-- Title
-- Summary
-- Organization id
-- Permissions context
-- Last updated date
+- Record type.
+- Record id.
+- Title.
+- Summary.
+- Organization id.
+- Permissions context.
+- Last updated date.
 
 ## Harbor AI Behavior
 
@@ -72,10 +72,10 @@ Harbor AI should understand natural language queries and return useful context, 
 
 ## Future Considerations
 
-- Semantic search
-- Saved searches
-- Search suggestions
-- Cross system search after integrations
+- Semantic search.
+- Saved searches.
+- Search suggestions.
+- Cross-system search after integrations.
 
 ## Acceptance Criteria
 
