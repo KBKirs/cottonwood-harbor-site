@@ -22,8 +22,8 @@ Businesses need operating knowledge, customer documents, notes, and files connec
 
 ## Non Goals
 
-- Build a full document management system in MVP.
-- Build complex version control in MVP.
+- Build a full document management system in Foundation.
+- Build complex version control in Foundation.
 - Build external storage integrations before validation.
 
 ## User Stories

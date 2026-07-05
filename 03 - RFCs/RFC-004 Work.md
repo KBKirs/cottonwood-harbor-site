@@ -22,8 +22,8 @@ Terms like tasks, jobs, and projects are too narrow. Harbor Vault needs one flex
 
 ## Non Goals
 
-- Build a complex project management tool in MVP.
-- Build industry specific workflows in MVP.
+- Build a complex project management tool in Foundation.
+- Build industry specific workflows in Foundation.
 - Build full recurring automation before validation.
 
 ## User Stories

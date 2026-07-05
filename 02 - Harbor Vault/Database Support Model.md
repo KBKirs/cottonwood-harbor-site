@@ -8,7 +8,7 @@ The database should support the product.
 
 The database should not define the product.
 
-This document captures the early data model implied by the Harbor Model and MVP blueprint.
+This document captures the early data model implied by the Harbor Model and Harbor Vault Foundation Blueprint.
 
 ## Core Objects
 
@@ -210,10 +210,10 @@ Insight can reference Organization, Person, Work, Document, Report, or Activity
 - Permissions must be enforced at query and AI context levels.
 - Activity should capture meaningful events, not noise.
 
-## MVP Data Questions
+## Foundation Data Questions
 
-- Should people support many to many Organization relationships in MVP?
+- Should people support many to many Organization relationships in Foundation?
 - Should documents require a file upload or support external links?
 - Should AI summaries be stored, generated live, or both?
 - Should activity events be generated automatically from all changes or only meaningful changes?
-- Should Work support recurrence in MVP?
+- Should Work support recurrence in Foundation?

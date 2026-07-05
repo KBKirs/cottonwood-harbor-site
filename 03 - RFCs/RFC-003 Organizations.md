@@ -23,7 +23,7 @@ Most CRMs revolve around contacts. Harbor Vault should revolve around Organizati
 ## Non Goals
 
 - Build a full CRM.
-- Build invoicing in the MVP.
+- Build invoicing in the Foundation.
 - Build complex parent child organization hierarchies unless validated.
 
 ## User Stories

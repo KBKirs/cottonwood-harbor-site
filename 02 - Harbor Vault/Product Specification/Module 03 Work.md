@@ -214,8 +214,8 @@ Mobile Work should prioritize:
 
 ## Open Questions
 
-- Should Work support custom types in MVP?
-- Should recurring Work be included in MVP?
+- Should Work support custom types in Foundation?
+- Should recurring Work be Included in the Foundation?
 - Should Work have subtasks or checklist items?
 - Should Work require an Organization?
 - Should every Work item require a next action?

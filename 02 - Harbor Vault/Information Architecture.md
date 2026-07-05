@@ -344,9 +344,9 @@ Prefer:
 - Decision needed
 - Important change
 
-## MVP Boundaries
+## Foundation Boundaries
 
-Included in MVP:
+Included in the Foundation:
 
 - Dashboard
 - Organizations
@@ -357,7 +357,7 @@ Included in MVP:
 - Harbor AI brief and insights
 - Settings and permissions
 
-Not included in MVP:
+Not Included in the Foundation:
 
 - Full invoicing
 - Full accounting
@@ -366,4 +366,4 @@ Not included in MVP:
 - Complex integrations
 - Industry specific configuration engines
 
-These can come later if the MVP proves the Harbor Model.
+These can come later if the Foundation proves the Harbor Model.

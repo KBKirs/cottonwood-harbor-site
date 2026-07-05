@@ -22,7 +22,7 @@ Reports often show charts without helping users decide. Harbor Vault reporting s
 
 ## Non Goals
 
-- Build a full business intelligence platform in MVP.
+- Build a full business intelligence platform in Foundation.
 - Build every report customers may eventually want.
 - Show charts for decoration.
 

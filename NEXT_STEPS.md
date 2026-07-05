@@ -83,7 +83,7 @@ Every workflow answers: What happens next?
 
 Phase 2A has started:
 
-- `02 - Harbor Vault/MVP Blueprint.md`
+- `02 - Harbor Vault/Harbor Vault Foundation Blueprint.md`
 - `02 - Harbor Vault/Harbor Model.md`
 - `02 - Harbor Vault/Product Specification/Module 01 Dashboard.md`
 - `02 - Harbor Vault/Product Specification/Module 02 Organizations.md`
@@ -93,7 +93,7 @@ Phase 2A has started:
 - `02 - Harbor Vault/User Roles and Permissions.md`
 - `02 - Harbor Vault/Database Support Model.md`
 
-Before building another major screen, complete the Harbor Vault MVP blueprint.
+Before building another major screen, complete the Harbor Vault Foundation Blueprint.
 
 ## 5. Expand The Harbor Library
 

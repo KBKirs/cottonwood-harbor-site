@@ -22,7 +22,7 @@ AI should not be bolted onto Harbor Vault later. Harbor Vault should be AI nativ
 
 ## Non Goals
 
-- Fully autonomous actions in MVP.
+- Fully autonomous actions in Foundation.
 - AI that replaces human responsibility.
 - AI gimmicks that do not help businesses run better.
 

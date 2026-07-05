@@ -134,9 +134,9 @@ Harbor AI responses should be:
 - Permission aware
 - Business focused
 
-## MVP AI Features
+## Foundation AI Features
 
-MVP should include:
+Foundation scope should include:
 
 - Dashboard AI Brief
 - Organization AI Summary
@@ -144,7 +144,7 @@ MVP should include:
 - Report AI Trend Explanation
 - Global AI Search foundation
 
-MVP should not include:
+Foundation scope should not include:
 
 - Fully autonomous actions
 - Complex agent workflows

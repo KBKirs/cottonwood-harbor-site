@@ -82,7 +82,7 @@ Harbor AI should proactively summarize:
 
 ## Future Considerations
 
-Dashboard widgets may become configurable after the MVP.
+Dashboard widgets may become configurable after the Foundation.
 
 ## Acceptance Criteria
 

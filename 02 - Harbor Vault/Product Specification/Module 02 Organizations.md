@@ -204,7 +204,7 @@ Should answer:
 
 ## Data Fields
 
-Minimum MVP fields:
+Minimum Foundation fields:
 
 - Organization ID
 - Name
@@ -284,7 +284,7 @@ Do not compress the full desktop view into mobile.
 ## Open Questions
 
 - Should Organization type be required?
-- Should Organizations support parent and child relationships in MVP?
-- Should locations be included in MVP or v1.1?
+- Should Organizations support parent and child relationships in Foundation?
+- Should locations be Included in the Foundation or v1.1?
 - Should AI summaries be generated automatically or on demand?
 - Which Organization activity events are meaningful enough to show?

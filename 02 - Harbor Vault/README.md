@@ -8,7 +8,7 @@ What should I do next?
 
 ## Core Blueprint
 
-- `MVP Blueprint.md`
+- `Harbor Vault Foundation Blueprint.md`
 - `Harbor Model.md`
 - `Information Architecture.md`
 - `User Roles and Permissions.md`
@@ -31,7 +31,7 @@ What should I do next?
 6. Harbor AI
 7. Database support model
 
-## MVP Rule
+## Foundation Rule
 
 Do not build screens before the module specification answers:
 

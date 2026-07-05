@@ -150,7 +150,7 @@ Customer Portal may not:
 
 Permissions should be understandable.
 
-Avoid dozens of tiny permission switches in the MVP.
+Avoid dozens of tiny permission switches in the Foundation.
 
 Start with role based permissions, then add overrides later if customers need them.
 
@@ -178,8 +178,8 @@ If a user can only view assigned Work, Harbor AI should only answer within that 
 
 ## Open Questions
 
-- Should Customer Portal be included in MVP or designed for a later release?
+- Should Customer Portal be Included in the Foundation or designed for a later release?
 - Should Managers see financial KPIs by default?
 - Should AI suggested actions require approval before execution?
-- Should permissions be organization specific in MVP?
+- Should permissions be organization specific in Foundation?
 - Which records are soft deleted versus permanently deleted?

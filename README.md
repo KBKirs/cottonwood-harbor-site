@@ -28,7 +28,7 @@ See `NEXT_STEPS.md` for the working execution plan for publishing, maintaining t
 
 ## Harbor Vault Specification
 
-See `02 - Harbor Vault/README.md` for the Harbor Vault MVP blueprint, Harbor Model, information architecture, roles and permissions, module specifications, and database support model.
+See `02 - Harbor Vault/README.md` for the Harbor Vault Foundation Blueprint, Harbor Model, information architecture, roles and permissions, module specifications, and database support model.
 
 ## RFCs
 

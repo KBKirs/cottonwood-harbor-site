@@ -304,4 +304,4 @@ That document should define:
 - Every navigation path
 - Every permission level
 
-This will prevent rework, keep the experience consistent, and give Harbor Vault a strong foundation beyond the MVP.
+This will prevent rework, keep the experience consistent, and give Harbor Vault a strong foundation beyond the Foundation.
