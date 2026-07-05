@@ -4,6 +4,9 @@ Phase 2A
 
 Module 1 Dashboard
 
+Canonical build reference:
+RFC 002 Dashboard
+
 ## Dashboard Purpose
 
 When someone logs into Harbor Vault, they should immediately know:
@@ -66,13 +69,13 @@ Dashboard
 
 Harbor AI Brief
 
-KPI Cards
+KPI Summary Cards
 
-Today's Work      Calendar
+Priority Work     Calendar Snapshot
 
 Business Health   Activity Feed
 
-Reports
+Alerts and Risks
 ```
 
 ## Harbor AI Brief
@@ -105,30 +108,32 @@ This is valuable because it summarizes what matters and points the user toward a
 
 The Dashboard should not show dozens of metrics.
 
-It should show six KPI cards:
+It should show no more than six KPI cards initially:
 
-1. Today's Work
-2. Revenue
-3. Customers
-4. Open Issues
-5. Team Capacity
-6. Growth
+1. Open Work
+2. Overdue Work
+3. Organizations
+4. Upcoming Schedule
+5. Documents Added
+6. Business Health
 
 Every card should answer:
 
 Should I care?
 
-## Today's Work
+## Priority Work
 
-Today's Work should replace the traditional task list.
+Priority Work should replace the traditional task list.
 
-Instead of showing 100 tasks, it should group work by attention level:
+Instead of showing 100 tasks, it should show the Work items that most need attention:
 
-- High Priority
-- Medium Priority
-- Completed Today
-- Waiting
+- Overdue
+- Due today
 - Blocked
+- High priority
+- Waiting on response
+- Assigned to the current user
+- Recently changed
 
 This helps people know where to focus.
 
@@ -152,15 +157,15 @@ It should summarize the health of the business using simple status language:
 - Watch
 - Needs Attention
 
-Status areas:
+Initial status areas:
 
-- Sales
 - Operations
-- Customer Experience
+- Customers
+- Workload
 - Cash Flow
-- Projects
+- Growth
 
-AI should determine the status and explain why.
+Foundation can begin with rule based statuses. AI should eventually determine the status and explain why.
 
 ## Activity Feed
 
@@ -180,13 +185,20 @@ Revenue exceeded weekly goal.
 Customer satisfaction increased.
 ```
 
-## Reports
+## Alerts and Risks
 
-Reports should not include charts for the sake of charts.
+Alerts should surface issues requiring attention.
 
-Every chart should answer:
+Initial alert types:
 
-What decision should I make?
+- Overdue Work
+- Blocked Work
+- Missing follow up
+- Upcoming deadline
+- Stale Organization activity
+- AI detected risk placeholder
+
+Alerts must be actionable.
 
 ## Sidebar
 
