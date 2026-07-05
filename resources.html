@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cottonwood Harbor Resource Library</title>
+    <meta name="description" content="Browse the Cottonwood Harbor business solution template library: checklists, SOPs, dashboards, forms, spreadsheets, and operating documents for growing companies.">
+    <meta property="og:title" content="Cottonwood Harbor Resource Library">
+    <meta property="og:description" content="A deep business solution template library for businesses that need clearer documents, checklists, forms, and spreadsheets.">
+    <meta property="og:image" content="assets/brand-board-preview.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Cottonwood Harbor home">
+        <img src="assets/cottonwood-harbor-logo.svg" alt="Cottonwood Harbor">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#solutions">Categories</a>
+        <a href="resources.html" aria-current="page">Library</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="mailto:admin@cottonwoodharbor.com">Request Access</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
+      <a href="index.html#solutions">Categories</a>
+      <a href="resources.html">Library</a>
+      <a href="index.html#process">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="library-hero">
+        <div>
+          <p class="eyebrow">Business resource library</p>
+          <h1>Business solution templates for everyday work.</h1>
+          <p class="hero-lede">A serious library of checklists, SOPs, templates, forms, spreadsheets, dashboards, and operating documents for businesses that need the work written down and easier to manage.</p>
+          <div class="library-stats" aria-label="Library statistics">
+            <span><strong data-resource-count>128</strong> resources</span>
+            <span>8 operating areas</span>
+            <span>Built for daily use</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-shell" aria-label="Cottonwood Harbor resource library">
+        <aside class="library-sidebar">
+          <p class="eyebrow">Browse</p>
+          <div class="library-search">
+            <label for="resource-search">Search resources</label>
+            <input id="resource-search" type="search" placeholder="Search by name or category" data-resource-search>
+          </div>
+          <div class="library-filters" data-resource-filters aria-label="Resource filters"></div>
+        </aside>
+
+        <section class="library-results">
+          <div class="library-results-header">
+            <div>
+              <p class="eyebrow">Library catalog</p>
+              <h2><span data-visible-count>128</span> practical business solution templates</h2>
+            </div>
+            <a class="button secondary" href="mailto:admin@cottonwoodharbor.com?subject=Cottonwood%20Harbor%20Resource%20Library">Request the Library</a>
+          </div>
+          <div class="resource-grid" data-resource-grid></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/cottonwood-harbor-logo.svg" alt="Cottonwood Harbor">
+      <p>Business resources to run the work better.</p>
+      <p class="footer-meta">Cottonwood Harbor | Clarity, confidence, control, follow-through</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="resources.js"></script>
+  </body>
+</html>
