@@ -21,6 +21,9 @@ This log preserves the context behind important product, brand, and company deci
 | D-013 | Priority Work replaces a generic task list | Reduces noise and keeps the user focused on overdue, blocked, due, assigned, or recently changed Work. | 2026-07-05 |
 | D-014 | Activity feed tracks meaningful events only | Prevents low value activity spam and builds trust in the Dashboard. | 2026-07-05 |
 | D-015 | Dashboard starts role-aware, not fully customizable | Avoids overbuilding the Foundation release while still making the Dashboard relevant by role. | 2026-07-05 |
+| D-016 | Organizations are the active operating context | Makes the current business context visible and gives Dashboard, Search, Harbor AI, Work, Documents, and Reporting one clear boundary. | 2026-07-05 |
+| D-017 | Membership is separate from User | Allows one user to belong to multiple Organizations with different roles and permissions. | 2026-07-05 |
+| D-018 | Organization context scopes search, AI, dashboard, and permissions | Prevents cross-Organization data leakage and keeps AI context trustworthy. | 2026-07-05 |
 
 ## Decision Discipline
 

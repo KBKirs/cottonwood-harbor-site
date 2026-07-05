@@ -4,6 +4,9 @@ Phase 2A
 
 Module 2 Organizations
 
+Canonical build reference:
+RFC 003 Organizations
+
 ## Purpose
 
 Organizations are the heart of Harbor Vault.
@@ -13,6 +16,8 @@ Most CRMs revolve around contacts.
 Harbor Vault revolves around Organizations.
 
 That makes the system stronger for B2B customers and flexible enough to serve many industries.
+
+Organizations are also the active operating context for Harbor Vault. The current Organization scopes Dashboard, Search, Harbor AI, Documents, Work, Reporting, settings, and permissions.
 
 ## Primary Question
 
@@ -34,6 +39,21 @@ An Organization can contain:
 - AI summaries
 - Activity
 - Assets later
+- Members
+- Teams
+- Settings
+- Branding
+
+If future implementation requires a separate billing or infrastructure tenant, use Account or Workspace for that backend concept. The product should remain Organization first for users.
+
+## Core Principles
+
+- Every meaningful resource belongs to one Organization.
+- Organizations own data; users do not.
+- Users belong to Organizations through Memberships.
+- Permissions never cross Organizations.
+- Harbor AI context is scoped to the active Organization.
+- Organization context should always be visible.
 
 ## Core Screens
 
@@ -227,8 +247,17 @@ Minimum Foundation fields:
 Initial statuses:
 
 - Active
+- Pending
+- Archived
+- Suspended
+
+Relationship statuses:
+
 - Prospect
-- On Hold
+- Customer
+- Vendor
+- Partner
+- Internal
 - Needs Attention
 - Inactive
 
@@ -243,17 +272,91 @@ Initial types:
 - Internal
 - Other
 
+## Membership
+
+Users become Members of Organizations.
+
+Membership is separate from User.
+
+This allows one user to belong to many Organizations with different roles.
+
+Membership should include:
+
+- Organization ID
+- User ID
+- Role
+- Joined date
+- Invited date
+- Status
+
+Membership statuses:
+
+- Active
+- Invited
+- Pending
+- Suspended
+
+## Teams
+
+Teams are optional collaboration groups inside an Organization.
+
+Small Organizations may use none.
+
+Large Organizations may use many.
+
+Example Teams:
+
+- Operations
+- Sales
+- Finance
+- HR
+- Engineering
+
+## Organization Switcher
+
+Users may belong to multiple Organizations.
+
+The active Organization should be visible in navigation.
+
+Switching Organizations changes:
+
+- Dashboard
+- Search
+- Harbor AI
+- Documents
+- Work
+- Reporting
+- Settings
+
+No data or AI context should leak between Organizations.
+
+## Organization Settings
+
+Organization settings should include:
+
+- General
+- Security
+- AI
+- Documents
+- Notifications
+- Appearance
+- Branding
+
 ## User Actions
 
 Users can:
 
 - Create Organization
 - Edit Organization
+- Archive Organization
+- Restore Organization
 - Add Contact
 - Add Location
 - Add Work
 - Upload Document
 - Add Note
+- Invite Member
+- Manage Teams
 - View Activity
 - Ask Harbor AI about the Organization
 
