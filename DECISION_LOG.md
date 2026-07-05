@@ -36,6 +36,19 @@ This log preserves the context behind important product, brand, and company deci
 | D-028 | Published Documents become Organization knowledge according to indexing policy | Gives Harbor AI reliable memory while preserving administrator control over what can be retrieved. | 2026-07-05 |
 | D-029 | Document history is versioned and restorable | Preserves institutional memory and lets teams recover from mistakes without losing context. | 2026-07-05 |
 | D-030 | Harbor AI retrieves Documents only within permission and policy boundaries | Protects confidential knowledge and prevents AI from exposing restricted content. | 2026-07-05 |
+| D-031 | Harbor Vault is built for organizations with 1 to 100 users first | This market needs enterprise-quality software without enterprise complexity, procurement cycles, or internal software teams. | 2026-07-05 |
+| D-032 | Harbor Vault launches with simple plan packaging | Individual, Team, and Enterprise keep pricing understandable and avoid maintaining multiple mid-market editions too early. | 2026-07-05 |
+| D-033 | Team is the flagship Harbor Vault plan | One excellent product for growing organizations under 100 users keeps product decisions and messaging focused. | 2026-07-05 |
+| D-034 | Enterprise is contact sales, not the primary build target | Keeps the door open for advanced security, compliance, and deployment needs without building enterprise-first. | 2026-07-05 |
+| D-035 | Harbor Vault is priced per Organization, not per seat | Predictable pricing supports growing teams without punishing customer growth. | 2026-07-05 |
+| D-036 | Paid plans should not gate core features | Every customer should receive the complete platform while plans scale by capacity, support, and advanced requirements. | 2026-07-05 |
+| D-037 | Commercial implementation belongs in RFC 016 | Pricing, billing, subscriptions, AI usage, storage limits, and upgrade paths need a dedicated engineering contract. | 2026-07-05 |
+| D-038 | Harbor Vault is positioned as the operating system for small Organizations | This narrative explains why Organizations, Work, Documents, AI, Calendar, Reports, and Search belong together. | 2026-07-05 |
+| D-039 | Business strategy documents are separate from implementation RFCs | Strategy documents answer why, who, and how to communicate value; RFCs answer what to build and how it should behave. | 2026-07-05 |
+| D-040 | Harbor Vault core value proposition is One Organization, One Platform, One Source of Truth, One Monthly Price | This gives website, pricing, sales, and product messaging a simple repeatable frame. | 2026-07-05 |
+| D-041 | Simplicity First is a core Harbor Vault principle | Power without complexity keeps Harbor Vault useful for small Organizations without dedicated IT staff. | 2026-07-05 |
+| D-042 | Harbor Vault navigation should stay intentionally narrow | Dashboard, Work, Documents, Harbor AI, Calendar, Reports, and Settings keep the product easier to learn and use. | 2026-07-05 |
+| D-043 | Every RFC requires a Simplicity Review | Complexity should be challenged before implementation, not after the product becomes hard to use. | 2026-07-05 |
 
 ## Decision Discipline
 

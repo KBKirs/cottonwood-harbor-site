@@ -84,5 +84,6 @@ Every RFC should include:
 - RFC 013 REST API Contract
 - RFC 014 Design System
 - RFC 015 Harbor Vault Foundation Release Specification
+- RFC 016 Commercial Model and Licensing
 
 After RFC 001 through RFC 006 are complete, create RFC 000 Architecture Index as the concise canonical map of Organizations, Members, Work, Documents, AI, Reports, Calendar, Notifications, Search, and their relationships.

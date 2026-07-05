@@ -34,6 +34,16 @@ What problem are we solving?
 
 Describe the intended layout, hierarchy, and interaction model.
 
+## Simplicity Review
+
+Explain how this RFC keeps Harbor Vault user friendly.
+
+- What is the one primary question this screen or workflow answers?
+- What is hidden until the user needs it?
+- What sensible defaults reduce setup?
+- What complexity was intentionally deferred?
+- Could this be explained to a non-technical person in 30 seconds?
+
 ## Workflow
 
 Describe the user journey from entry point to completion.
@@ -59,3 +69,5 @@ What should be designed for later, but not built now?
 - Criterion 1
 - Criterion 2
 - Criterion 3
+- The simplest solution that solves the problem has been favored.
+- The feature does not make Harbor Vault noticeably harder to learn without proportional value.

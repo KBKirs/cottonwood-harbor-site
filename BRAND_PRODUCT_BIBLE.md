@@ -80,6 +80,12 @@ Never the other way around.
 
 Simple systems outperform complicated ones.
 
+### Simplicity First
+
+The simplest solution that solves the problem wins.
+
+Power should emerge from thoughtful design, not from exposing every possible option.
+
 ### Design With Purpose
 
 Every screen should exist for a reason.
@@ -105,6 +111,7 @@ Every release should be better than the last.
 ## 7. Core Values
 
 - Clarity
+- Simplicity
 - Confidence
 - Growth
 - Innovation
@@ -212,6 +219,30 @@ Users should always know:
 
 The interface should reduce cognitive load.
 
+Power without complexity is a non-negotiable design philosophy.
+
+Navigation should be boring.
+
+Users should never wonder where to go.
+
+Every screen should answer one primary question:
+
+- Dashboard: What needs my attention?
+- Work: What are we doing?
+- Documents: What do we know?
+- Calendar: When is it happening?
+- Reports: How are we doing?
+- Harbor AI: How can I help?
+- Settings: How is this configured?
+
+If a screen tries to answer too many questions, simplify it.
+
+Use progressive disclosure.
+
+New users should see only what they need. Advanced capabilities should become discoverable as Organizations mature.
+
+Prefer sensible defaults, AI-assisted setup, and opinionated workflows over heavy configuration.
+
 ## 14. AI Principles
 
 AI assists people.
@@ -247,6 +278,36 @@ Harbor Vault is built on the Harbor Model:
 - Insights
 
 Organizations are the center of the system.
+
+Simplicity First is as foundational as Organization First.
+
+Harbor Vault is designed to make Organizations easier to run, not to introduce new complexity.
+
+Every feature should reduce cognitive load, require minimal configuration, and feel intuitive from the first use.
+
+When faced with multiple implementation options, Harbor Vault favors the solution that is simpler to understand, easier to maintain, and faster for users to adopt.
+
+If a feature makes the product noticeably harder to learn without delivering proportional value, it should not ship.
+
+Harbor Vault is built first for organizations with 1 to 100 users.
+
+The product should serve independent professionals, small businesses, and growing teams that need enterprise-quality operating software without enterprise complexity.
+
+This focus does not prevent Harbor Vault from scaling later. It keeps the first product sharp, understandable, and useful for the market most likely to need it.
+
+Initial packaging should stay simple:
+
+- Individual
+- Team
+- Enterprise
+
+Team is the flagship plan.
+
+Enterprise is available for advanced security, compliance, deployment, or support requirements, but it is not the primary build target.
+
+Harbor Vault is priced per Organization, not per seat.
+
+Every paid plan should include the complete platform. Plans scale by capacity, support, onboarding, and advanced requirements, not by withholding core functionality.
 
 Every dashboard answers:
 
@@ -293,6 +354,8 @@ Before approving any feature, ask:
 - Does it help businesses run better?
 - Does it simplify work?
 - Does it improve clarity?
+- Is this the simplest solution that solves the problem?
+- Could this feature be explained to a non-technical person in 30 seconds?
 - Would we still build this five years from now?
 
 If the answer is no, do not build it.
@@ -310,6 +373,8 @@ We will never compromise trust for short term growth.
 We will never overload the interface.
 
 We will never use AI as a gimmick.
+
+We will never confuse power with complexity.
 
 ## 20. Long Term Vision
 

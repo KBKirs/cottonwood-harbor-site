@@ -2,12 +2,21 @@
 
 This roadmap keeps today's execution focused while preserving the long term vision for Harbor Vault and the broader Cottonwood Harbor ecosystem.
 
+Harbor Vault work now moves across three connected tracks:
+
+- Product: RFCs, architecture, implementation.
+- Business: pricing, positioning, go-to-market, launch.
+- Company: Cottonwood Harbor brand, mission, values, standards.
+
 ## Horizon 1 Foundation Now
 
 Core operating system.
 
 Purpose:
 Lay the durable product foundation for Harbor Vault.
+
+Primary market:
+Organizations with 1 to 100 users that need enterprise-quality operating software without enterprise complexity.
 
 Focus areas:
 
@@ -33,6 +42,12 @@ Users can understand what needs attention, organize Organizations and Work, acce
 
 Specification checkpoint:
 RFC 001 through RFC 006 define the core product architecture. The next step is to complete the supporting system RFCs for Reports and Insights, Roles and Permissions, Global Search, Calendar, Notifications, Database Schema, API Contract, Design System, and Foundation Release criteria.
+
+Packaging checkpoint:
+Initial packaging should stay simple: Individual, Team, and 100+ Users / Contact Us. Team is the flagship plan. Harbor Vault is priced per Organization, not per seat.
+
+Positioning checkpoint:
+HVP 001 defines Harbor Vault as the operating system for small Organizations.
 
 ## Horizon 2 Growth
 
@@ -88,5 +103,6 @@ Move it forward only when:
 - It solves a real business problem
 - It helps businesses run better
 - It fits the Harbor Model
+- It preserves power without complexity
 - It supports the Cottonwood Harbor Standard
 - It can be built simply enough to earn trust

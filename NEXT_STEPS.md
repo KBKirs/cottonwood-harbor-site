@@ -169,3 +169,26 @@ Next product RFCs:
 - RFC 011 Notifications
 
 After RFC 001 through RFC 006 are reviewed, create RFC 000 Architecture Index as the concise map of domain objects and their relationships.
+
+## 9. Build The Business Strategy Track
+
+The next strategic artifact is `04 - Business Strategy/HVP-001 Harbor Vault Positioning and Product Narrative.md`.
+
+HVP 001 defines:
+
+- Why Harbor Vault exists
+- Who it is built for
+- Who it is not built for first
+- What makes it different
+- Why customers would choose it
+- How to describe Harbor Vault clearly
+
+Recommended business documents after HVP 001:
+
+- Vision and Mission
+- Product Positioning
+- Competitive Analysis
+- Brand Guide
+- Sales Deck
+- Website Copy
+- Launch Plan

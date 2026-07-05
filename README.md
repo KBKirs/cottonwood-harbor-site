@@ -34,6 +34,10 @@ See `02 - Harbor Vault/README.md` for the Harbor Vault Foundation Blueprint, Har
 
 See `03 - RFCs/README.md` for the Cottonwood Harbor RFC process and initial Harbor Vault RFC set.
 
+## Business Strategy
+
+See `04 - Business Strategy/README.md` for Harbor Vault positioning, product narrative, go-to-market planning, and business strategy documents.
+
 ## Roadmap
 
 See `ROADMAP.md` for the three horizon product roadmap: Foundation, Growth, and Future.

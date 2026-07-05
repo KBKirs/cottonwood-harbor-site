@@ -6,6 +6,10 @@ The product is AI native, organization centered, and designed around one questio
 
 What should I do next?
 
+Harbor Vault is built first for organizations with 1 to 100 users.
+
+Initial packaging is Individual, Team, and Enterprise, with Team as the flagship plan.
+
 ## Core Blueprint
 
 - `Harbor Vault Foundation Blueprint.md`
@@ -13,6 +17,7 @@ What should I do next?
 - `Information Architecture.md`
 - `User Roles and Permissions.md`
 - `Database Support Model.md`
+- `Packaging and Pricing.md`
 
 ## Product Specifications
 
@@ -20,6 +25,7 @@ What should I do next?
 - `Product Specification/Module 02 Organizations.md`
 - `Product Specification/Module 03 Work.md`
 - `Product Specification/Module 04 Harbor AI.md`
+- `Product Specification/Module 05 Documents and Knowledge.md`
 
 ## Build Order
 
@@ -29,7 +35,8 @@ What should I do next?
 4. Organizations
 5. Work
 6. Harbor AI
-7. Database support model
+7. Documents and Knowledge
+8. Database support model
 
 ## Foundation Rule
 
