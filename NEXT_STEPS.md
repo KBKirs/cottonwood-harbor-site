@@ -142,18 +142,30 @@ Before publishing any page, product, feature, or resource, answer yes to all of 
 
 If any answer is no, keep improving.
 
-## 8. Execute RFC 001 First
+## 8. Continue The Harbor Vault RFC Track
 
-The next build grade product artifact is `03 - RFCs/RFC-001 Harbor Model.md`.
+RFC 001 through RFC 006 are now drafted:
 
-RFC 001 defines:
+- `03 - RFCs/RFC-001 Harbor Model.md`
+- `03 - RFCs/RFC-002 Dashboard.md`
+- `03 - RFCs/RFC-003 Organizations.md`
+- `03 - RFCs/RFC-004 Work.md`
+- `03 - RFCs/RFC-005 Harbor AI.md`
+- `03 - RFCs/RFC-006 Documents and Knowledge.md`
 
-- Core business objects
-- Object relationships
-- What belongs where
-- User mental model
-- API implications
-- Data model implications
-- Harbor AI behavior
+These define the core pillars:
 
-Once RFC 001 is accepted, every screen, database table, API, and workflow should trace back to it.
+- Organizations: ownership and collaboration
+- Work: execution model
+- Harbor AI: intelligence layer
+- Documents and Knowledge: organizational memory
+
+Next product RFCs:
+
+- RFC 007 Reports and Insights
+- RFC 008 Roles and Permissions
+- RFC 009 Global Search
+- RFC 010 Calendar
+- RFC 011 Notifications
+
+After RFC 001 through RFC 006 are reviewed, create RFC 000 Architecture Index as the concise map of domain objects and their relationships.

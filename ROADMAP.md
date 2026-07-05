@@ -19,6 +19,7 @@ Focus areas:
 - Work
 - Calendar
 - Documents
+- Knowledge hierarchy
 - Reporting
 - Harbor AI foundation
 - Global Search foundation
@@ -29,6 +30,9 @@ Focus areas:
 
 Primary outcome:
 Users can understand what needs attention, organize Organizations and Work, access Knowledge, and receive useful AI driven Insights.
+
+Specification checkpoint:
+RFC 001 through RFC 006 define the core product architecture. The next step is to complete the supporting system RFCs for Reports and Insights, Roles and Permissions, Global Search, Calendar, Notifications, Database Schema, API Contract, Design System, and Foundation Release criteria.
 
 ## Horizon 2 Growth
 

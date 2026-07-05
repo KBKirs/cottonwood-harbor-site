@@ -32,6 +32,10 @@ This log preserves the context behind important product, brand, and company deci
 | D-024 | Harbor AI must provide transparent provenance | Users need to see what information AI used so recommendations can be trusted and verified. | 2026-07-05 |
 | D-025 | Harbor AI actions are permission-aware and auditable | Protects Organization data and creates accountability for AI-generated changes. | 2026-07-05 |
 | D-026 | Users remain in control of AI-executable actions | AI can recommend and prepare actions, but meaningful changes require user confirmation. | 2026-07-05 |
+| D-027 | Documents are connected knowledge objects, not isolated files | Keeps business information tied to Organizations, Work, Reports, Calendar, Members, and Harbor AI context. | 2026-07-05 |
+| D-028 | Published Documents become Organization knowledge according to indexing policy | Gives Harbor AI reliable memory while preserving administrator control over what can be retrieved. | 2026-07-05 |
+| D-029 | Document history is versioned and restorable | Preserves institutional memory and lets teams recover from mistakes without losing context. | 2026-07-05 |
+| D-030 | Harbor AI retrieves Documents only within permission and policy boundaries | Protects confidential knowledge and prevents AI from exposing restricted content. | 2026-07-05 |
 
 ## Decision Discipline
 
