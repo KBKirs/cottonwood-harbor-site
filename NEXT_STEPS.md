@@ -141,3 +141,19 @@ Before publishing any page, product, feature, or resource, answer yes to all of 
 - Does it earn trust?
 
 If any answer is no, keep improving.
+
+## 8. Execute RFC 001 First
+
+The next build grade product artifact is `03 - RFCs/RFC-001 Harbor Model.md`.
+
+RFC 001 defines:
+
+- Core business objects
+- Object relationships
+- What belongs where
+- User mental model
+- API implications
+- Data model implications
+- Harbor AI behavior
+
+Once RFC 001 is accepted, every screen, database table, API, and workflow should trace back to it.

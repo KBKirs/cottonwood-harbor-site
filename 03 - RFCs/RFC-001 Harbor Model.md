@@ -11,72 +11,371 @@ CEO, Codex Lead Engineer
 
 ## Problem Statement
 
-Harbor Vault needs a single organizing concept so the product does not become a collection of disconnected modules.
+Harbor Vault needs a single organizing model before implementation begins.
+
+Without a clear model, screens, APIs, database tables, and workflows will drift toward whatever is easiest to build in the moment. That creates a product that feels like disconnected modules instead of a coherent Business Operating System.
+
+The Harbor Model defines how Harbor Vault thinks.
+
+## Decision
+
+Harbor Vault is organized around five core business concepts:
+
+1. Organizations
+2. People
+3. Work
+4. Knowledge
+5. Insights
+
+Organizations are the center of the system.
+
+Everything important should connect back to an Organization unless there is a clear product reason not to.
 
 ## Goals
 
 - Establish Harbor Vault as a Business Operating System.
-- Define the five core concepts of the Harbor Model.
-- Make Organizations the center of the system.
-- Give every future screen and database table a coherent product foundation.
+- Define the core business objects.
+- Define how objects relate.
+- Define what belongs where.
+- Give users a simple mental model for understanding the product.
+- Give Codex a stable target for screens, APIs, database tables, and workflows.
+- Keep Harbor Vault flexible across industries without becoming generic.
 
 ## Non Goals
 
-- Define every database field.
-- Design every screen.
+- Define every database column.
+- Finalize every screen layout.
 - Build industry specific workflows.
+- Build invoicing, accounting, or customer portal behavior in the Foundation.
+- Replace future RFCs for Dashboard, Organizations, Work, Search, Harbor AI, Documents, or Reporting.
 
-## User Stories
+## Core Business Objects
 
-- As a business owner, I want one operating model that helps me understand where information belongs.
-- As a manager, I want customers, work, documents, and activity connected in one place.
-- As Codex, I need a clear product model before building UI, API, and database structure.
+### Organization
 
-## UI Direction Or Mockup Notes
+Definition:
+An Organization is a business, customer, vendor, partner, prospect, internal entity, or other group the company works with.
 
-The Harbor Model should be reflected in navigation and screen hierarchy:
+Why it matters:
+Organizations are the best anchor for B2B work. Contacts change, work changes, and documents change, but the Organization provides the durable relationship context.
 
+Belongs here:
+
+- Company profile
+- Relationship status
+- Contacts
+- Locations
+- Related Work
+- Documents
+- Notes
+- Activity
+- Harbor AI summary
+- Business health
+- Invoices later
+- Assets later
+
+Primary question:
+What is the current state of this relationship?
+
+### Person
+
+Definition:
+A Person is an internal team member, external contact, decision maker, stakeholder, or customer portal user.
+
+Why it matters:
+People explain who is involved, who owns work, who approves decisions, and who needs communication.
+
+Belongs here:
+
+- Contact information
+- Role or title
+- Organization relationship
+- Internal user status
+- Assignments
+- Permissions
+- Activity
+
+Primary question:
+Who is involved and what do they need?
+
+### Work
+
+Definition:
+Work is anything that needs to be planned, tracked, completed, renewed, resolved, approved, or followed up.
+
+Why it matters:
+Work avoids forcing every industry into narrow labels like task, job, project, or ticket.
+
+Work can represent:
+
+- Service call
+- Project
+- Estimate
+- Installation
+- Inspection
+- Renewal
+- Onboarding
+- Follow up
+- Issue
+- General operational work
+
+Belongs here:
+
+- Status
+- Priority
+- Owner
+- Assigned people
+- Due date
+- Next action
+- Related Organization
+- Related Documents
+- Notes
+- Activity
+- Harbor AI recommendations
+
+Primary question:
+What needs to happen next?
+
+### Knowledge
+
+Definition:
+Knowledge is the operating memory of the business.
+
+Why it matters:
+Businesses lose time when important context is scattered across files, inboxes, notes, and people's memory.
+
+Knowledge includes:
+
+- Documents
+- Notes
+- Files
+- SOPs
+- History
+- Policies
+- Conversations
+- Customer context
+- Work context
+- AI summaries
+
+Primary question:
+Where is the information I need?
+
+### Insight
+
+Definition:
+An Insight is a signal, recommendation, trend, risk, summary, or explanation that helps the user make a better decision.
+
+Why it matters:
+Insights are where Harbor AI becomes a business advisor instead of a chatbot.
+
+Insights include:
+
+- Harbor AI Briefs
+- Business Health statuses
+- Risks
+- Recommendations
+- Trend explanations
+- Suggested actions
+- Search summaries
+- Report explanations
+
+Primary question:
+What is Harbor Vault seeing that I might miss?
+
+## Relationship Model
+
+```text
+Account
+  Organizations
+    People
+    Work
+    Knowledge
+    Insights
+    Activity
+
+People
+  Organizations
+  Work assignments
+  Permissions
+
+Work
+  Organization
+  Assigned People
+  Knowledge
+  Insights
+  Activity
+
+Knowledge
+  Organization
+  Work
+  People optional
+  AI Summary
+
+Insights
+  Organization optional
+  Work optional
+  Person optional
+  Knowledge optional
+  Report optional
+```
+
+## What Belongs Where
+
+Use this rule when designing screens, APIs, or database tables:
+
+- If it describes a business relationship, it belongs to Organization.
+- If it describes a human being, responsibility, or access, it belongs to Person.
+- If it needs to be done, tracked, scheduled, blocked, or completed, it belongs to Work.
+- If it stores context, files, notes, or history, it belongs to Knowledge.
+- If it explains, recommends, summarizes, warns, or prioritizes, it belongs to Insight.
+
+## User Mental Model
+
+Users should be able to think:
+
+```text
+Who are we working with?
+Who is involved?
+What needs to happen?
+What do we know?
+What should we do next?
+```
+
+Those questions map directly to:
+
+```text
+Organizations
+People
+Work
+Knowledge
+Insights
+```
+
+## Navigation Implications
+
+The primary Harbor Vault navigation should support the Harbor Model:
+
+- Dashboard
 - Organizations
 - People
 - Work
-- Knowledge
-- Insights
+- Calendar
+- Documents
+- Reporting
+- Harbor AI
+- Settings
 
-Organizations should be the primary anchor.
+Dashboard and Harbor AI are cross cutting experiences.
 
-## Workflow
+Organizations, People, Work, Documents, and Reporting represent the working surface of the model.
 
-Users should be able to start at an Organization and reach related People, Work, Documents, Notes, Activity, and AI insights.
+## Screen Design Implications
 
-## Permissions
+Every major screen should make the Harbor Model visible.
 
-Permissions should apply across Harbor Model objects based on role and context.
+Organization screens should show related People, Work, Knowledge, Insights, and Activity.
+
+Work screens should show Organization, assigned People, Knowledge, Activity, and Harbor AI suggestions.
+
+Document screens should show related Organization, Work, visibility, and AI summary.
+
+Reporting screens should explain Insights and link back to the underlying Organizations, People, Work, or Knowledge.
+
+## API Implications
+
+Initial API resources should align with the Harbor Model:
+
+- `/organizations`
+- `/people`
+- `/work`
+- `/documents`
+- `/notes`
+- `/activity`
+- `/insights`
+- `/search`
+- `/reports`
+- `/harbor-ai`
+
+APIs should preserve relationships instead of returning isolated records with no context.
 
 ## Data Model Implications
 
-Core objects:
+Core tables or collections should include:
 
-- Organization
-- Person
-- Work
-- Document
-- Note
-- Activity
-- Insight
+- accounts
+- users
+- roles
+- organizations
+- people
+- work_items
+- documents
+- notes
+- activity_events
+- insights
+- calendar_events
 
-Organizations should relate to nearly every object.
+Every record should belong to an Account.
+
+Organizations should be the primary relationship anchor.
+
+Harbor AI Insights should reference real records whenever possible.
+
+## Permissions
+
+Permissions should apply across the Harbor Model.
+
+Examples:
+
+- A user may see assigned Work but not financial Insights.
+- A user may see an Organization profile but not restricted Documents.
+- A customer portal user may see shared Work and shared Documents only.
+- Harbor AI must not summarize records the user cannot access.
 
 ## Harbor AI Behavior
 
-Harbor AI should understand the Harbor Model and summarize information by Organization, People, Work, Knowledge, and Insights.
+Harbor AI must understand the Harbor Model.
+
+It should be able to answer:
+
+- What is happening with this Organization?
+- Who is involved?
+- What Work needs attention?
+- What Knowledge is relevant?
+- What Insights matter right now?
+
+Harbor AI should be proactive, but permission aware.
 
 ## Future Considerations
 
-Future modules should only be added if they clearly fit the Harbor Model.
+Future products and modules should only be added if they clearly support the Harbor Model.
+
+Potential future extensions:
+
+- Assets
+- Invoices
+- Customer Portal
+- Workflow Automation
+- Integrations
+- Industry specific extensions
+- Predictive analytics
+
+These should attach to the model, not distort it.
+
+## Open Questions
+
+- Should People support many to many Organization relationships in the Foundation?
+- Should Locations be a first class object or an Organization sub object?
+- Should Assets be included in Foundation or deferred?
+- Should Insights be stored as durable records or generated on demand?
+- Which relationships must be required at creation time?
 
 ## Acceptance Criteria
 
 - Harbor Vault is defined as a Business Operating System.
-- The Harbor Model has five core concepts.
-- Organizations are the system center.
-- Future modules can be evaluated against the Harbor Model.
+- The Harbor Model has five core concepts: Organizations, People, Work, Knowledge, Insights.
+- Organizations are the center of the system.
+- Every major screen can be traced back to the Harbor Model.
+- Every major database table can be traced back to the Harbor Model.
+- Every major API resource can be traced back to the Harbor Model.
+- Harbor AI behavior is designed around the Harbor Model.
+- Future features can be evaluated by whether they fit the Harbor Model.

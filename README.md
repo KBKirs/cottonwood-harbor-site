@@ -33,3 +33,7 @@ See `02 - Harbor Vault/README.md` for the Harbor Vault Foundation Blueprint, Har
 ## RFCs
 
 See `03 - RFCs/README.md` for the Cottonwood Harbor RFC process and initial Harbor Vault RFC set.
+
+## Roadmap
+
+See `ROADMAP.md` for the three horizon product roadmap: Foundation, Growth, and Future.
