@@ -1,35 +1,54 @@
 # Cottonwood Harbor Core Team
 
-## Founder and CEO
-
-The founder sets the company vision, validates ideas with customers, and makes final decisions.
-
-## Codex: Lead Software Engineer
+## CEO
 
 Responsibilities:
 
-- Frontend implementation
-- Backend implementation
-- Database integration
-- Authentication
-- API development
-- Testing
-- CI/CD and deployment
-- Performance optimization
+- Vision
+- Customer feedback
+- Final decisions
+- Prioritization
 
-## Founder: Chief Product and Design Officer
+## Chief Product and Design Officer
 
 Responsibilities:
 
-- Product strategy
-- UX/UI direction
-- Brand stewardship
+- Product architecture
+- UX/UI
 - Information architecture
-- Harbor Vault feature design
-- AI feature planning
-- Release planning
-- Product documentation
-- Design reviews
-- Technical architecture guidance
-- Customer workflow design
+- Brand
+- Harbor AI behavior
+- Specifications
+- Product roadmap
+- Reviewing Codex work
 
+## Codex: Lead Engineer
+
+Responsibilities:
+
+- Implementation
+- React and Next.js
+- APIs
+- Database
+- Authentication
+- Testing
+- Deployment
+
+## RFC Operating Model
+
+Every significant Harbor Vault feature should have a Request for Comments document before it is built.
+
+RFCs live in `03 - RFCs/`.
+
+RFCs should define:
+
+- Problem statement
+- Goals
+- User stories
+- UI direction or mockup notes
+- Workflow
+- Permissions
+- Data model implications
+- Harbor AI behavior
+- Future considerations
+- Acceptance criteria

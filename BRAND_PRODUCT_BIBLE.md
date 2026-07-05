@@ -234,6 +234,20 @@ It is not another task manager.
 
 Harbor Vault is an operating system for businesses.
 
+Harbor Vault is AI native, not AI enhanced.
+
+AI is not a feature bolted onto the product later. Every major screen should assume that an intelligent assistant can summarize information, surface risks, suggest next actions, and explain trends in plain language.
+
+Harbor Vault is built on the Harbor Model:
+
+- Organizations
+- People
+- Work
+- Knowledge
+- Insights
+
+Organizations are the center of the system.
+
 Every dashboard answers:
 
 What needs attention?
@@ -241,6 +255,10 @@ What needs attention?
 Every workflow answers:
 
 What happens next?
+
+Every screen answers:
+
+What should I do next?
 
 ## 16. Writing Standards
 

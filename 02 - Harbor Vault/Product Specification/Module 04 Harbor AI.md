@@ -1,0 +1,160 @@
+# Harbor Vault Product Specification
+
+Phase 2A
+
+Module 4 Harbor AI
+
+## Purpose
+
+Harbor AI is the intelligence layer of Harbor Vault.
+
+It should not wait for questions.
+
+It should proactively surface what matters, explain why it matters, and suggest what to do next.
+
+Harbor AI is not a chatbot.
+
+Harbor AI is a business advisor.
+
+## Primary Question
+
+What is Harbor AI seeing that I might miss?
+
+## AI Native Product Rule
+
+Harbor Vault is AI native, not AI enhanced.
+
+Every major screen should ask:
+
+What would Harbor AI do here?
+
+## Core AI Behaviors
+
+Harbor AI should:
+
+- Summarize important information
+- Surface risks
+- Suggest next actions
+- Explain trends
+- Identify missing information
+- Detect patterns
+- Prioritize attention
+- Translate data into plain language
+
+## Harbor AI Surfaces
+
+### Dashboard
+
+Harbor AI Brief:
+
+- What needs attention?
+- What changed since yesterday?
+- Where are the risks?
+- What should I do next?
+
+### Organization Record
+
+AI generated summary:
+
+- Relationship status
+- Recent activity
+- Open Work
+- Risks
+- Suggested next action
+
+### Work Item
+
+AI suggested next steps:
+
+- Priority recommendation
+- Risk explanation
+- Missing information
+- Suggested owner
+- Suggested status change
+
+### Reports
+
+AI trend explanation:
+
+- What changed?
+- Why might it matter?
+- What decision should the user consider?
+
+### Search
+
+Intent aware search:
+
+- Understand natural language queries
+- Search across Organizations, People, Work, Documents, Notes, Reports, and AI insights
+- Return results with context
+
+## Proactive Insight Examples
+
+```text
+You've had three customers request schedule changes this week. Would you like to see a pattern?
+```
+
+```text
+Revenue has increased 14 percent over the last six weeks while overtime costs have also increased. Here are three possible causes.
+```
+
+```text
+Northwind has three open Work items and no activity in nine days. This relationship may need attention.
+```
+
+## AI Boundaries
+
+Harbor AI should not:
+
+- Pretend uncertainty is fact
+- Reveal information a user is not allowed to access
+- Execute high impact actions without approval
+- Replace human responsibility
+- Generate noise
+- Create fake confidence
+
+## Permissions
+
+Harbor AI must respect role permissions.
+
+If a user cannot access financial KPIs, Harbor AI cannot reveal financial conclusions.
+
+If a user cannot access restricted documents, Harbor AI cannot summarize them.
+
+If a user can only view assigned Work, Harbor AI can only answer within that scope.
+
+## AI Output Standards
+
+Harbor AI responses should be:
+
+- Clear
+- Short
+- Explainable
+- Action oriented
+- Permission aware
+- Business focused
+
+## MVP AI Features
+
+MVP should include:
+
+- Dashboard AI Brief
+- Organization AI Summary
+- Work AI Suggested Next Steps
+- Report AI Trend Explanation
+- Global AI Search foundation
+
+MVP should not include:
+
+- Fully autonomous actions
+- Complex agent workflows
+- External email sending without approval
+- Automated billing actions
+
+## Open Questions
+
+- Which AI features require user approval?
+- Which insights should be generated automatically?
+- How often should the AI Brief refresh?
+- Should users be able to dismiss insights?
+- Should dismissed insights train future prioritization?
