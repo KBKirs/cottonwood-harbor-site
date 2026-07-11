@@ -69,7 +69,6 @@ exports.handler = async (event) => {
       ],
       allow_promotion_codes: true,
       billing_address_collection: "auto",
-      customer_creation: "always",
       success_url: `${siteUrl}/products.html?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/products.html?checkout=cancelled`,
       metadata: {
