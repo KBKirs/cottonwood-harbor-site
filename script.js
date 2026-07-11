@@ -16,6 +16,42 @@ if (menuButton && mobileMenu) {
 }
 
 const checkoutButtons = document.querySelectorAll("[data-checkout-plan]");
+const checkoutStatus = document.querySelector("[data-checkout-status]");
+
+if (checkoutStatus) {
+  const params = new URLSearchParams(window.location.search);
+  const checkoutResult = params.get("checkout");
+
+  if (checkoutResult === "success") {
+    checkoutStatus.hidden = false;
+    checkoutStatus.classList.add("is-success");
+    checkoutStatus.innerHTML = `
+      <p class="eyebrow">Subscription started</p>
+      <h2>Your Harbor Vault subscription is active</h2>
+      <p>Thank you for subscribing. We will contact you at the email used during checkout with next steps for Harbor Vault access and onboarding.</p>
+      <div class="checkout-status-actions">
+        <a class="button primary" href="mailto:admin@cottonwoodharbor.com?subject=Harbor%20Vault%20Onboarding">Contact Cottonwood Harbor</a>
+        <a class="button secondary" href="resources.html">Browse Harbor Library</a>
+      </div>
+    `;
+    checkoutStatus.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  if (checkoutResult === "cancelled") {
+    checkoutStatus.hidden = false;
+    checkoutStatus.classList.add("is-cancelled");
+    checkoutStatus.innerHTML = `
+      <p class="eyebrow">Checkout cancelled</p>
+      <h2>No subscription was created</h2>
+      <p>You can return to pricing whenever you are ready, or contact us if you have questions before subscribing.</p>
+      <div class="checkout-status-actions">
+        <a class="button primary" href="#pricing">Return to Pricing</a>
+        <a class="button secondary" href="mailto:admin@cottonwoodharbor.com?subject=Harbor%20Vault%20Question">Ask a Question</a>
+      </div>
+    `;
+    checkoutStatus.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
 
 checkoutButtons.forEach((button) => {
   button.addEventListener("click", async () => {

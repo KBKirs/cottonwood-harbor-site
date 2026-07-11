@@ -834,6 +834,45 @@ h3 {
   margin-top: 12px;
 }
 
+.checkout-status {
+  display: grid;
+  gap: 16px;
+  margin: clamp(42px, 6vw, 76px) clamp(20px, 5vw, 70px) 0;
+  padding: clamp(28px, 4vw, 48px);
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.checkout-status[hidden] {
+  display: none;
+}
+
+.checkout-status.is-success {
+  border-top: 6px solid var(--teal);
+}
+
+.checkout-status.is-cancelled {
+  border-top: 6px solid var(--copper);
+}
+
+.checkout-status h2 {
+  max-width: 760px;
+}
+
+.checkout-status p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--charcoal);
+  font-size: clamp(1.04rem, 1.48vw, 1.24rem);
+}
+
+.checkout-status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
 .pricing-section {
   padding: clamp(54px, 8vw, 104px) clamp(20px, 5vw, 70px);
   background: var(--cream);
