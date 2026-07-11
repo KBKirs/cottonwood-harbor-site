@@ -19,6 +19,7 @@ These should evolve together.
 ## Active Documents
 
 - `HVP-001 Harbor Vault Positioning and Product Narrative.md`
+- `Post Checkout Fulfillment SOP.md`
 
 ## Recommended Next Documents
 
