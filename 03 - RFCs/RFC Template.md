@@ -43,6 +43,8 @@ Explain how this RFC keeps Harbor Vault user friendly.
 - What sensible defaults reduce setup?
 - What complexity was intentionally deferred?
 - Could this be explained to a non-technical person in 30 seconds?
+- Which Product Commandments does this RFC reinforce?
+- Does this make Harbor Vault easier to use, easier to understand, or more valuable for the Organizations we serve?
 
 ## Workflow
 
@@ -71,3 +73,4 @@ What should be designed for later, but not built now?
 - Criterion 3
 - The simplest solution that solves the problem has been favored.
 - The feature does not make Harbor Vault noticeably harder to learn without proportional value.
+- The RFC aligns with `PRODUCT_COMMANDMENTS.md`.

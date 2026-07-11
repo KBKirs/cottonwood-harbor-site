@@ -22,6 +22,10 @@ See `TEAM.md` for the Cottonwood Harbor core team structure and responsibilities
 
 See `BRAND_PRODUCT_BIBLE.md` for Cottonwood Harbor mission, voice, design principles, product principles, AI principles, navigation standards, roadmap, and decision framework.
 
+## Product Commandments
+
+See `PRODUCT_COMMANDMENTS.md` for the internal product constitution used to evaluate product decisions, RFCs, pull requests, and releases.
+
 ## Next Steps
 
 See `NEXT_STEPS.md` for the working execution plan for publishing, maintaining the Brand and Product Bible, creating the professional handbook, defining Harbor Vault, and expanding the Harbor Library.

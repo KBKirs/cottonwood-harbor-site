@@ -208,6 +208,10 @@ What problem does this solve?
 
 If the answer is not obvious, do not build it.
 
+The internal product constitution is `PRODUCT_COMMANDMENTS.md`.
+
+Every product decision, RFC, pull request, and release should be measured against those commandments.
+
 ## 13. UX Principles
 
 Users should always know:
@@ -357,6 +361,7 @@ Before approving any feature, ask:
 - Is this the simplest solution that solves the problem?
 - Could this feature be explained to a non-technical person in 30 seconds?
 - Would we still build this five years from now?
+- Does this align with the Product Commandments?
 
 If the answer is no, do not build it.
 
@@ -421,6 +426,7 @@ Before anything is released, we should be able to answer yes to all of these:
 - Does it reflect our brand?
 - Would we be proud to show it to our largest future customer?
 - Does it earn trust?
+- Does it follow the Product Commandments?
 
 If any answer is no, we keep improving.
 

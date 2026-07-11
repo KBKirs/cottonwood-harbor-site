@@ -49,6 +49,11 @@ This log preserves the context behind important product, brand, and company deci
 | D-041 | Simplicity First is a core Harbor Vault principle | Power without complexity keeps Harbor Vault useful for small Organizations without dedicated IT staff. | 2026-07-05 |
 | D-042 | Harbor Vault navigation should stay intentionally narrow | Dashboard, Work, Documents, Harbor AI, Calendar, Reports, and Settings keep the product easier to learn and use. | 2026-07-05 |
 | D-043 | Every RFC requires a Simplicity Review | Complexity should be challenged before implementation, not after the product becomes hard to use. | 2026-07-05 |
+| D-044 | Product Commandments are the internal constitution for Harbor Vault decisions | Customers should feel these principles in the product, while the team uses them to evaluate features, RFCs, pull requests, and releases. | 2026-07-05 |
+| D-045 | Standard Harbor Vault plans should be self serve | A customer should be able to subscribe without a sales call, demo, quote, or email back-and-forth. | 2026-07-05 |
+| D-046 | Harbor Vault should use a payment provider for billing | Stripe or a similar provider should handle subscriptions, cards, invoices, failed payments, taxes, and receipts so Harbor Vault does not build billing infrastructure from scratch. | 2026-07-05 |
+| D-047 | Signup should ask for the minimum information needed to start | Name, email, password or provider login, and Organization name are enough for the initial customer journey. | 2026-07-05 |
+| D-048 | First-run onboarding should guide users to value | A short onboarding checklist and sensible defaults prevent the first experience from feeling empty or confusing. | 2026-07-05 |
 
 ## Decision Discipline
 
