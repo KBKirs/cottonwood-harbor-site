@@ -44,7 +44,7 @@ checkoutButtons.forEach((button) => {
     } catch (error) {
       button.textContent = "Try again";
       button.removeAttribute("aria-busy");
-      alert("Checkout is not available yet. Please email admin@cottonwoodharbor.com.");
+      alert(`Checkout is not available yet: ${error.message}`);
     }
 
     if (document.visibilityState === "visible") {

@@ -46,6 +46,12 @@ exports.handler = async (event) => {
     return jsonResponse(400, { error: "Unknown or unconfigured plan" });
   }
 
+  if (!String(priceId).startsWith("price_")) {
+    return jsonResponse(500, {
+      error: `${planNames[plan]} is configured with an invalid Stripe Price ID. Use a value that starts with price_.`,
+    });
+  }
+
   const siteUrl =
     process.env.SITE_URL ||
     process.env.URL ||
@@ -81,6 +87,8 @@ exports.handler = async (event) => {
     return jsonResponse(200, { url: session.url });
   } catch (error) {
     console.error("Stripe checkout session failed", error);
-    return jsonResponse(500, { error: "Unable to create checkout session" });
+    return jsonResponse(500, {
+      error: error.message || "Unable to create checkout session",
+    });
   }
 };
