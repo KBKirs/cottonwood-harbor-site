@@ -1,7 +1,5 @@
 const Stripe = require("stripe");
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
 const priceIdsByPlan = {
   individual: process.env.STRIPE_INDIVIDUAL_PRICE_ID,
   team: process.env.STRIPE_TEAM_PRICE_ID,
@@ -30,6 +28,8 @@ exports.handler = async (event) => {
   if (!process.env.STRIPE_SECRET_KEY) {
     return jsonResponse(500, { error: "Stripe secret key is not configured" });
   }
+
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
   let payload;
 
