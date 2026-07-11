@@ -20,6 +20,7 @@ These should evolve together.
 
 - `HVP-001 Harbor Vault Positioning and Product Narrative.md`
 - `Post Checkout Fulfillment SOP.md`
+- `Temporary Subscriber Tracker.csv`
 
 ## Recommended Next Documents
 

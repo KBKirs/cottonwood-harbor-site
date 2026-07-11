@@ -1,0 +1,2 @@
+Customer Name,Email,Organization Name,Plan,Stripe Customer ID,Stripe Subscription ID,Checkout Date,Subscription Status,Onboarding Status,Welcome Email Sent,Next Action,Notes
+Example Customer,customer@example.com,Example Organization,Individual,cus_example,sub_example,2026-07-11,Active,Welcome email sent,Yes,Schedule onboarding call,Replace this example row with the first real subscriber
