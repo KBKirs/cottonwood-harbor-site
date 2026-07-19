@@ -161,15 +161,34 @@ if (grid && filters && searchInput) {
   filters.innerHTML = categories.map((category) => {
     const active = category === "All" ? " is-active" : "";
     const count = category === "All" ? resources.length : resources.filter((resource) => resource.category === category).length;
-    return `<button class="filter-button${active}" type="button" data-filter="${category}">${category}<span>${count}</span></button>`;
+    const pressed = category === "All" ? "true" : "false";
+    return `<button class="filter-button${active}" type="button" data-filter="${escapeAttribute(category)}" aria-pressed="${pressed}">${escapeHtml(category)}<span>${count}</span></button>`;
   }).join("");
 
   filters.addEventListener("click", (event) => {
     const button = event.target.closest("[data-filter]");
     if (!button) return;
     activeCategory = button.dataset.filter;
-    filters.querySelectorAll("[data-filter]").forEach((filter) => filter.classList.toggle("is-active", filter === button));
+    filters.querySelectorAll("[data-filter]").forEach((filter) => {
+      const isActive = filter === button;
+      filter.classList.toggle("is-active", isActive);
+      filter.setAttribute("aria-pressed", String(isActive));
+    });
     renderResources();
+  });
+
+  grid.addEventListener("click", (event) => {
+    const resetButton = event.target.closest("[data-reset-library]");
+    if (!resetButton) return;
+    activeCategory = "All";
+    searchInput.value = "";
+    filters.querySelectorAll("[data-filter]").forEach((filter) => {
+      const isActive = filter.dataset.filter === "All";
+      filter.classList.toggle("is-active", isActive);
+      filter.setAttribute("aria-pressed", String(isActive));
+    });
+    renderResources();
+    searchInput.focus();
   });
 
   searchInput.addEventListener("input", renderResources);
@@ -184,15 +203,41 @@ if (grid && filters && searchInput) {
     });
 
     if (visibleCount) visibleCount.textContent = String(filtered.length);
+
+    if (!filtered.length) {
+      grid.innerHTML = `
+        <div class="resource-empty" role="status">
+          <p class="eyebrow">No matches</p>
+          <h3>No resources found</h3>
+          <p>Try a different search or reset the Library to show every resource.</p>
+          <button class="button secondary" type="button" data-reset-library>Reset Library</button>
+        </div>
+      `;
+      return;
+    }
+
     grid.innerHTML = filtered.map((resource) => `
       <article class="resource-card">
         <div class="resource-card-top">
-          <span>${resource.category}</span>
-          <span>${resource.type}</span>
+          <span>${escapeHtml(resource.category)}</span>
+          <span>${escapeHtml(resource.type)}</span>
         </div>
-        <h3>${resource.title}</h3>
+        <h3>${escapeHtml(resource.title)}</h3>
         <a href="mailto:admin@cottonwoodharbor.com?subject=${encodeURIComponent(resource.title)}">Request this resource</a>
       </article>
     `).join("");
   }
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value);
 }

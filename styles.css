@@ -654,6 +654,25 @@ h3 {
   color: var(--navy);
 }
 
+.resource-empty {
+  grid-column: 1 / -1;
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(8, 38, 63, 0.12);
+  background: var(--white);
+}
+
+.resource-empty h3 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.resource-empty p:not(.eyebrow) {
+  max-width: 560px;
+  color: var(--muted);
+}
+
 .philosophy-hero {
   padding: clamp(64px, 9vw, 126px) clamp(20px, 5vw, 70px) clamp(52px, 7vw, 92px);
   background: var(--white);
