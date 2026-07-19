@@ -24,3 +24,13 @@
   from = "/philosophy"
   to = "/philosophy.html"
   status = 200
+
+[[redirects]]
+  from = "/sitemap"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.uml"
+  to = "/sitemap.xml"
+  status = 301
