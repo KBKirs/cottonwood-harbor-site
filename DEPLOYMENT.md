@@ -22,3 +22,23 @@ The site currently uses `admin@cottonwoodharbor.com` and a placeholder phone lin
 ## Brand source
 
 The design is based on `01 - Branding/Approved Logo/CottonwoodHarbor_BrandBoard_v1.3.png` and the approved messaging in `README.md`.
+
+## Stripe Individual first month promotion
+
+The Individual plan uses the normal recurring Stripe Price ID for `$49/month`.
+
+To offer `$19 first month, then $49/month`, create a one-time Stripe coupon:
+
+- Amount off: `$30`
+- Duration: `Once`
+- Applies to: Harbor Vault Individual, if you want to limit it
+
+Then add this Netlify environment variable:
+
+```text
+STRIPE_INDIVIDUAL_FIRST_MONTH_COUPON_ID
+```
+
+Set the value to the Stripe coupon ID. After saving the variable, redeploy the site.
+
+The checkout function applies that coupon automatically to Individual checkout sessions when the variable is present. Team checkout is not discounted.

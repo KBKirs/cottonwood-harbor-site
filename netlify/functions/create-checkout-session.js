@@ -10,6 +10,10 @@ const planNames = {
   team: "Team",
 };
 
+const couponsByPlan = {
+  individual: process.env.STRIPE_INDIVIDUAL_FIRST_MONTH_COUPON_ID,
+};
+
 function jsonResponse(statusCode, body) {
   return {
     statusCode,
@@ -59,7 +63,7 @@ exports.handler = async (event) => {
     "https://cottonwoodharbor.com";
 
   try {
-    const session = await stripe.checkout.sessions.create({
+    const sessionOptions = {
       mode: "subscription",
       payment_method_types: ["card"],
       line_items: [
@@ -68,7 +72,6 @@ exports.handler = async (event) => {
           quantity: 1,
         },
       ],
-      allow_promotion_codes: true,
       billing_address_collection: "auto",
       success_url: `${siteUrl}/products.html?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/products.html?checkout=cancelled`,
@@ -82,6 +85,22 @@ exports.handler = async (event) => {
           planName: planNames[plan],
         },
       },
+    };
+
+    const coupon = couponsByPlan[plan];
+
+    if (coupon) {
+      sessionOptions.discounts = [{ coupon }];
+    } else if (plan === "individual") {
+      return jsonResponse(500, {
+        error: "The Individual first month promotion is not configured yet.",
+      });
+    } else {
+      sessionOptions.allow_promotion_codes = true;
+    }
+
+    const session = await stripe.checkout.sessions.create({
+      ...sessionOptions,
     });
 
     return jsonResponse(200, { url: session.url });
