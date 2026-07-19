@@ -4,3 +4,23 @@
 
 [functions]
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/harbor-library"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/library"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 200
+
+[[redirects]]
+  from = "/philosophy"
+  to = "/philosophy.html"
+  status = 200
