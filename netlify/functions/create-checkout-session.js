@@ -11,8 +11,14 @@ const planNames = {
 };
 
 const couponsByPlan = {
-  individual: process.env.STRIPE_INDIVIDUAL_FIRST_MONTH_COUPON_ID,
+  individual: cleanEnvValue(process.env.STRIPE_INDIVIDUAL_FIRST_MONTH_COUPON_ID),
 };
+
+function cleanEnvValue(value) {
+  return String(value || "")
+    .trim()
+    .replace(/^['"]+|['"]+$/g, "");
+}
 
 function jsonResponse(statusCode, body) {
   return {
