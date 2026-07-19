@@ -6,6 +6,11 @@
   node_bundler = "esbuild"
 
 [[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
   from = "/harbor-library"
   to = "/resources.html"
   status = 200
