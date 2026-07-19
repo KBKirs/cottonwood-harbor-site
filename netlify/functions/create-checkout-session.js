@@ -17,7 +17,8 @@ const couponsByPlan = {
 function cleanEnvValue(value) {
   return String(value || "")
     .trim()
-    .replace(/^['"]+|['"]+$/g, "");
+    .replace(/^['"]+|['"]+$/g, "")
+    .replace(/[^\w-]/g, "");
 }
 
 function jsonResponse(statusCode, body) {
