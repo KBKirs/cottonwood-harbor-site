@@ -11,6 +11,36 @@
   status = 200
 
 [[redirects]]
+  from = "/resources/daily-startup-checklist"
+  to = "/daily-startup-checklist.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources/employee-onboarding-checklist"
+  to = "/employee-onboarding-checklist.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources/vehicle-inspection-form"
+  to = "/vehicle-inspection-form.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources/job-closeout-checklist"
+  to = "/job-closeout-checklist.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources/weekly-kpi-dashboard"
+  to = "/weekly-kpi-dashboard.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources/customer-complaint-sop"
+  to = "/customer-complaint-sop.html"
+  status = 200
+
+[[redirects]]
   from = "/harbor-library"
   to = "/resources.html"
   status = 200
