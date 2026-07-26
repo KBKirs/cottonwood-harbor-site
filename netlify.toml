@@ -11,6 +11,11 @@
   status = 200
 
 [[redirects]]
+  from = "/starter-kit"
+  to = "/starter-kit.html"
+  status = 200
+
+[[redirects]]
   from = "/resources/daily-startup-checklist"
   to = "/daily-startup-checklist.html"
   status = 200
