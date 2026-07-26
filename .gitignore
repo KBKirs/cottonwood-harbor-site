@@ -1,0 +1,4 @@
+node_modules/
+*.inspect.ndjson
+sample-resources/pdf/*.png
+sample-resources/spreadsheets/*.png
